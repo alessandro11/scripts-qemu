@@ -1,0 +1,21 @@
+# host config
+BASE_DIR=""
+HOST_BRD=br0
+VM_BOOT=custom
+
+VM_NAME=custom
+VM_RAM=4G
+VM_SMP=4
+
+# network kvmae2
+VM_MAC1=00:16:3e:DD:00:65
+VM_VLAN1=221
+VM_GUEST_IFNAME1=custom
+VM_NIC_MODEL=e1000
+
+VNC_DISPLAY=20
+
+#EXTRA_PARAM='-usb -usbdevice host:13fe:4100'
+EXTRA_PARAM='-usb -usbdevice host:0781:5406'
+#EXTRA_PARAM='-usb -usbdevice host:13fe:4100'
+

@@ -1,0 +1,28 @@
+# host config
+BASE_DIR=/root/vms
+HOST_BRD=brxlfc
+VM_BOOT=c
+
+VM_NAME=ubuntu16
+VM_RAM=4G
+VM_SMP=4
+VM_DISK="$BASE_DIR/nobk/Ubuntu16.04.1-LTS-Xenial-template-slx.qcow2"
+VM_DISK_FMT=qcow2
+
+# kernel
+#VM_KERNEL=$BASE_DIR/nobk/vmlinuz-4.4.0-21-generic
+#VM_INITRD=$BASE_DIR/nobk/initrd.img-4.4.0-21-generic
+#VM_KERNEL_CMDLINE="root=/dev/vda1"
+
+# network
+# kvmae
+VM_MAC1=00:16:2e:DD:00:64
+VM_VLAN1=221
+VM_GUEST_IFNAME1=u16
+
+# network 2
+#VM_MAC1=00:16:3e:dd:00:64
+#VM_VLAN1=
+#VM_GUEST_IFNAME2=
+
+VNC_DISPLAY=100

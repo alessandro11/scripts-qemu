@@ -1,0 +1,18 @@
+# host config
+BASE_DIR=""
+HOST_BRD=br0
+VM_BOOT=n
+
+VM_NAME=netboot
+VM_RAM=4G
+VM_SMP=4
+
+# network kvmae2
+VM_MAC1=00:16:3e:ff:ff:10
+VM_VLAN1=10
+VM_GUEST_IFNAME1=netboot
+VM_NIC_MODEL=rtl8139
+
+VNC_DISPLAY=10
+
+#EXTRA_PARAM='-drive file=/root/scratch.qcow2,format=qcow2,if=virtio,cache=writeback'

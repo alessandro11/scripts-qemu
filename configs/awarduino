@@ -1,0 +1,31 @@
+# host config
+BASE_DIR=/root/vms/nobk
+HOST_BRD=brxlfc
+VM_BOOT=c
+
+VM_NAME=aw
+VM_RAM=4G
+VM_SMP=4
+VM_DISK="${BASE_DIR}/ubuntu-acdemic-week-arduino.qcow2"
+VM_DISK_FMT=qcow2
+
+# kernel
+VM_KERNEL=$BASE_DIR/vmlinuz-4.4.0-21-generic
+VM_INITRD=$BASE_DIR/initrd.img-4.4.0-21-generic
+VM_KERNEL_CMDLINE="root=/dev/vda"
+
+#VM_DISK_IF='scsi'
+
+# network
+# kvmae
+VM_MAC1=00:16:2e:DD:00:10
+VM_VLAN1=221
+VM_GUEST_IFNAME1=awar
+VM_NIC_MODEL=e1000
+
+# network 2
+#VM_MAC1=00:16:3e:dd:00:64
+#VM_VLAN1=
+#VM_GUEST_IFNAME2=
+
+VNC_DISPLAY=10

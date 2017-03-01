@@ -1,0 +1,28 @@
+# host config
+BASE_DIR=/root/vms/openslx-base-ubuntu-14.04-lts
+HOST_BRD=brxlfc
+VM_NETBOOT=n
+
+VM_NAME=slxbase-ubuntu14.04
+VM_RAM=4G
+VM_SMP=4
+VM_DISK=$BASE_DIR/ubuntu.qcow2
+VM_DISK_FMT=qcow2
+
+# kernel
+VM_KERNEL=$BASE_DIR/vmlinuz-3.16.0-40-generic
+VM_INITRD=$BASE_DIR/initrd.img-3.16.0-4-amd64
+VM_KERNEL_CMDLINE="root=/dev/vda"
+
+# network
+# kvmae
+VM_MAC1=00:16:3e:DD:00:64
+VM_VLAN1=221
+VM_GUEST_IFNAME1=slx
+
+# network 2
+#VM_MAC1=00:16:3e:dd:00:64
+#VM_VLAN1=
+#VM_GUEST_IFNAME2=
+
+VNC_DISPLAY=100

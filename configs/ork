@@ -1,0 +1,17 @@
+# host config
+BASE_DIR=""
+HOST_BRD=brxlfc
+VM_BOOT=n
+
+VM_NAME=netboot
+VM_RAM=4G
+VM_SMP=4
+
+# network kvmae2
+VM_MAC1=44:37:e6:f0:c0:57
+VM_VLAN1=221
+VM_GUEST_IFNAME1=netboot
+VM_NIC_MODEL=e1000
+
+VNC_DISPLAY=30
+

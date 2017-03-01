@@ -1,0 +1,25 @@
+# host config
+BASE_DIR=/root/vms/windows
+HOST_BRD=br0
+VM_BOOT=windows
+
+VM_NAME=win7
+VM_RAM=4G
+VM_SMP=4
+VM_DISK="${BASE_DIR}/win7x64-virtio.qcow2"
+VM_DISK_FMT=qcow2
+
+# network
+# kvmae
+VM_MAC1=00:16:2e:dd:00:30
+VM_VLAN1=30
+VM_GUEST_IFNAME1=win7
+
+# network 2
+#VM_MAC1=00:16:3e:dd:00:64
+#VM_VLAN1=
+#VM_GUEST_IFNAME2=
+
+#VNC_DISPLAY=30
+#EXTRA_PARAM='-drive file=/root/vms/windows/softwares-win7x64.qcow2,index=1,if=virtio,format=qcow2,cache=writeback,cache.direct=on,aio=native'
+#EXTRA_PARAM="$EXTRA_PARAM -cdrom /mnt/pt_office_professional_plus_2013_x86_VL.iso"
